@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/catstagram-react/static/css/main.f512d5e6.css",
+    "main.js": "/catstagram-react/static/js/main.167bd977.js",
+    "static/js/787.2a22f4c7.chunk.js": "/catstagram-react/static/js/787.2a22f4c7.chunk.js",
+    "static/media/primeicons.svg": "/catstagram-react/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/Inter-Bold.woff": "/catstagram-react/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
+    "static/media/Inter-SemiBold.woff": "/catstagram-react/static/media/Inter-SemiBold.cca62d21c8c555c392e5.woff",
+    "static/media/Inter-Medium.woff": "/catstagram-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Light.woff": "/catstagram-react/static/media/Inter-Light.994e34451cc19ede31d3.woff",
+    "static/media/Inter-Regular.woff": "/catstagram-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Bold.woff2": "/catstagram-react/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
+    "static/media/Inter-Medium.woff2": "/catstagram-react/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-SemiBold.woff2": "/catstagram-react/static/media/Inter-SemiBold.b5f0f109bc88052d4000.woff2",
+    "static/media/Inter-Light.woff2": "/catstagram-react/static/media/Inter-Light.2d5198822ab091ce4305.woff2",
+    "static/media/Inter-Regular.woff2": "/catstagram-react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/primeicons.eot": "/catstagram-react/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
+    "static/media/primeicons.woff": "/catstagram-react/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
+    "static/media/primeicons.ttf": "/catstagram-react/static/media/primeicons.91bacab1f083f2795272.ttf",
+    "static/media/catstagram.png": "/catstagram-react/static/media/catstagram.adac1c45ecab4d861295.png",
+    "index.html": "/catstagram-react/index.html",
+    "main.f512d5e6.css.map": "/catstagram-react/static/css/main.f512d5e6.css.map",
+    "main.167bd977.js.map": "/catstagram-react/static/js/main.167bd977.js.map",
+    "787.2a22f4c7.chunk.js.map": "/catstagram-react/static/js/787.2a22f4c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f512d5e6.css",
+    "static/js/main.167bd977.js"
+  ]
+}
