@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import { Button } from 'primereact/button';
 import CatstagramLogo from '../assets/imgs/catstagram.png';
 import { Dialog } from 'primereact/dialog';
 import { Dropdown } from 'primereact/dropdown';
@@ -46,6 +47,7 @@ function Home() {
     }
   }
 
+
   let hideModal = () => {
       setIsVisible(false);
   }
@@ -55,7 +57,7 @@ function Home() {
       let strBreed = idImg;
 
       let query_params = {
-        breed_ids: strBreed,
+        breed_id: strBreed,
         limit: 15
       }
 
@@ -87,6 +89,7 @@ function Home() {
         const elementObjet = data.breeds[numberRandom] && {
           name: data.breeds[numberRandom].name,
           url: data.breeds[numberRandom].image.url,
+          id: data.breeds[numberRandom].id,
 
         };
       
@@ -136,11 +139,16 @@ function Home() {
           <Dropdown className='mr-5' optionLabel="name" optionValue="id" value={data.selected_breed} options={data.breeds} onChange={(e) => { setData((prevState) => ({ ...prevState, selected_breed: e.value })); getImages(e.value); }} placeholder="Select a Breed" />
         }
       />
+
+      <div className="flex justify-center my-10">
+      <Button label="Refresh" className="p-button-raised p-button-rounded" onClick={()=>{window.location.reload(false);}} />
+      </div>
+
       <div>
-        <div className="container grid justify-items-center md:grid-cols-6 sm:grid-cols-3 gap-10 pt-20 w-4/5 mx-auto">
+        <div className="container grid justify-items-center md:grid-cols-6 sm:grid-cols-3 gap-10 w-4/5 mx-auto">
           {headerBreeds?.map((breed, index) => (
             <div key={index}>
-            <div className="w-20 h-20 rounded-full overflow-hidden" onClick={() => {console.log(breed); }}>
+            <div className="w-20 h-20 rounded-full overflow-hidden cursor-pointer" onClick={(e) => {  getImages(breed.id)}}>
               <img src={breed.url} className=" object-cover min-w-full min-h-full" alt="catstagram" />
             </div>
             <p className="text-center">{breed.name}</p>
@@ -159,8 +167,6 @@ function Home() {
           <img className=" object-cover min-w-full min-h-full" src={selectedCat.url} alt="catstagram" />
           <p className="text-center mt-10">{selectedCat.desccription}</p>
       </Dialog>
-
-
     </div>
   );
 }
